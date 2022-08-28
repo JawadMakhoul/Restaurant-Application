@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.321" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/fcfff68890ad40a8a3f59ad18df29240.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fcba03" layoutX="206.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to JavaEat Restaurant" wrappingWidth="288.11962890625">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="firstname" layoutX="25.0" layoutY="227.0" prefHeight="26.0" prefWidth="186.0" promptText="First name" style="-fx-border-color: #fcba03#fcba03; -fx-border-width: 0px 4px 0px 4px 0px 4px 0px 4px; -fx-background-color: #ffffff;" />
+      <TextField fx:id="lastname" layoutX="248.0" layoutY="227.0" prefHeight="26.0" prefWidth="186.0" promptText="Last name" style="-fx-border-color: #fcba03#fcba03; -fx-border-width: 0px 4px 0px 4px 0px 4px 0px 4px; -fx-background-color: #ffffff;" />
+      <DatePicker fx:id="birthday" layoutX="25.0" layoutY="267.0" prefHeight="26.0" prefWidth="186.0" promptText="Birthday" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03#fcba03 #fcba03#fcba03; -fx-border-width: 0px 4px 0px 4px 0px 4px 0px 4px;" />
+      <PasswordField fx:id="password" layoutX="483.0" layoutY="265.0" prefHeight="26.0" prefWidth="186.0" promptText="Password" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03; -fx-border-width: 0px 0px 4px 0px;" />
+      <ComboBox fx:id="gender" layoutX="248.0" layoutY="267.0" prefHeight="26.0" prefWidth="186.0" promptText="Gender" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03#fcba03 #fcba03#fcba03; -fx-border-width: 0px 4px 0px 4px 0px 4px 0px 4px;" visibleRowCount="2" />
+      <ComboBox fx:id="neighberhood" layoutX="25.0" layoutY="308.0" prefHeight="26.0" prefWidth="186.0" promptText="Neighberhood" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03#fcba03 #fcba03#fcba03; -fx-border-width: 0px 4px 0px 4px 0px 4px 0px 4px;" />
+      <PasswordField fx:id="repassword" layoutX="483.0" layoutY="306.0" prefHeight="26.0" prefWidth="186.0" promptText="Enter the password again" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03; -fx-border-width: 0px 0px 4px 0px;" />
+      <RadioButton fx:id="gluten" layoutX="279.0" layoutY="312.0" mnemonicParsing="false" text="Sensitive to Gluten" />
+      <RadioButton fx:id="lactose" layoutX="279.0" layoutY="347.0" mnemonicParsing="false" text="Sensitive to Lactose" />
+      <Button fx:id="CreateAccount" layoutX="291.0" layoutY="436.0" mnemonicParsing="false" onAction="#CreateAccount" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: #fcba03 #fcba03;" text="Create account" textFill="WHITE" />
+      <ImageView fitHeight="47.0" fitWidth="44.0" layoutX="14.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/curve-arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="14.0" layoutY="452.0" mnemonicParsing="false" onAction="#back" prefHeight="47.0" prefWidth="44.0" style="-fx-background-color: transparent;" />
+      <ImageView fitHeight="47.0" fitWidth="44.0" layoutX="652.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/logout.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logout" layoutX="652.0" layoutY="452.0" mnemonicParsing="false" onAction="#logout" prefHeight="47.0" prefWidth="44.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="result" layoutX="486.0" layoutY="410.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+      <TextField fx:id="username" layoutX="483.0" layoutY="227.0" prefHeight="26.0" prefWidth="186.0" promptText="Username" style="-fx-border-color: #fcba03#fcba03; -fx-border-width: 0px 0px 4px 0px; -fx-background-color: #ffffff;" />
+      <Text fill="#fcba03" layoutX="483.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use 8 or more characters." />
+      <Text fill="#fcba03" layoutX="483.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use upper and lower case letters." />
+      <Text fill="#fcba03" layoutX="483.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use numbers." />
+      <Button fx:id="checkpass" layoutX="518.0" layoutY="443.0" mnemonicParsing="false" onAction="#checkpass" style="-fx-background-color: #fcba03 #fcba03 #fcba03 #fcba03;" text="Check Password" textFill="WHITE" />
+   </children>
+</AnchorPane>

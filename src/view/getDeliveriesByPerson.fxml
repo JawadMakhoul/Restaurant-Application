@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.321" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.getDeliveryByPersonController">
+   <children>
+      <Text fill="#fcba03" layoutX="112.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose delivery person :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="getdeliverybyperson" layoutX="216.0" layoutY="430.0" mnemonicParsing="false" onAction="#getdeliverybyperson" style="-fx-background-color: #fcba03#fcba03;" text="Get delivery by person &amp; month" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="169.0" fitWidth="238.0" layoutX="266.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/fcfff68890ad40a8a3f59ad18df29240.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="deliveryPerson" layoutX="387.0" layoutY="197.0" prefWidth="150.0" promptText="Delivery Person" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03#fcba03 #fcba03#fcba03; -fx-border-width: 0px 0px 0px 4px;" />
+      <Text fill="#fcba03" layoutX="112.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose month :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="month" layoutX="387.0" layoutY="250.0" prefWidth="150.0" promptText="Month" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03#fcba03 #fcba03#fcba03; -fx-border-width: 0px 0px 0px 4px;" />
+      <ImageView fitHeight="47.0" fitWidth="44.0" layoutX="643.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="50.0" layoutX="15.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/curve-arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="15.0" layoutY="441.0" mnemonicParsing="false" onAction="#back" prefHeight="47.0" prefWidth="44.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="logout" layoutX="643.0" layoutY="441.0" mnemonicParsing="false" onAction="#logout" prefHeight="47.0" prefWidth="44.0" style="-fx-background-color: transparent;" />
+      <ListView fx:id="result" layoutX="194.0" layoutY="290.0" prefHeight="133.0" prefWidth="313.0" style="-fx-border-color: #fcba03#fcba03 #fcba03#fcba03; -fx-border-width: 2px;" />
+   </children>
+</AnchorPane>
