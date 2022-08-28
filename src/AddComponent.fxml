@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.321" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddComponentController">
+   <children>
+      <Text fill="#fcba03" layoutX="175.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill in the information about the component">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="addcomp" layoutX="266.0" layoutY="378.0" mnemonicParsing="false" onAction="#addcomp" style="-fx-background-color: #fcba03#fcba03;" text="Add component" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="169.0" fitWidth="238.0" layoutX="266.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/fcfff68890ad40a8a3f59ad18df29240.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="compname" layoutX="155.0" layoutY="257.0" promptText="Component Name" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03#fcba03; -fx-border-width: 0px 0px 0px 4px;" />
+      <CheckBox fx:id="lactose" layoutX="204.0" layoutY="319.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Lactose" />
+      <CheckBox fx:id="gluten" layoutX="405.0" layoutY="319.0" mnemonicParsing="false" text="Gluten" />
+      <TextField fx:id="compprice" layoutX="353.0" layoutY="257.0" promptText="Price" style="-fx-background-color: #ffffff; -fx-border-color: #fcba03#fcba03; -fx-border-width: 0px 0px 0px 4px;" />
+      <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="14.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/curve-arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="43.0" layoutX="643.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/logout.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logout" layoutX="643.0" layoutY="439.0" mnemonicParsing="false" onAction="#logout" prefHeight="47.0" prefWidth="44.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="back" layoutX="14.0" layoutY="441.0" mnemonicParsing="false" onAction="#back" prefHeight="47.0" prefWidth="44.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>
