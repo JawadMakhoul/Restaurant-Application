@@ -7,8 +7,8 @@ When you open the application a splash image will open for seconds:
 ![Screenshot 2022-08-28 165836](https://user-images.githubusercontent.com/110395806/187079052-a9949cdf-affe-421a-b237-ca2efec0491a.png)
 
 Login screen:
-![mainpage](https://user-images.githubusercontent.com/110395806/187079084-3e2b40a0-6c6e-4549-85da-e195f3b26261.png)
 
+![mainpage](https://user-images.githubusercontent.com/110395806/187079084-3e2b40a0-6c6e-4549-85da-e195f3b26261.png)
 
 By logging in as a manager using the default username and password, pop up manager page that includes several functions like:
 ![ManagerMainPage](https://user-images.githubusercontent.com/110395806/187079148-5de81df9-c267-4254-8a89-9ed6b48d4a7a.png)
