@@ -42,6 +42,8 @@ Edit Component ->
 11- Cook by expertise - to get cooks by their expertise.
 
 By logging in as a customer using the personal account you can do several functions:
+![CustomerMainPage](https://user-images.githubusercontent.com/110395806/187396489-a50354e0-d8d6-4116-9de6-0626f9ed6964.png)
+
 1- Add order - you can start a new order.
 
 2- Remove order - you can remove any order you have ordered and has not been delivered.
