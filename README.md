@@ -9,7 +9,7 @@ When you open the application a splash image will open for seconds:
 Login screen:
 
 A background video is attached to the screen.
-![mainpage](https://user-images.githubusercontent.com/110395806/187079084-3e2b40a0-6c6e-4549-85da-e195f3b26261.png)
+![Login screen](https://user-images.githubusercontent.com/110395806/187397364-08418b1c-9114-468c-a7cf-5d6cab756da2.png)
 
 By logging in as a manager using the default username and password, pop up manager page that includes several functions like:
 ![ManagerMainPage](https://user-images.githubusercontent.com/110395806/187079148-5de81df9-c267-4254-8a89-9ed6b48d4a7a.png)
